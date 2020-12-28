@@ -1,0 +1,24 @@
+.btn-success {
+    margin-top:25px ;
+}
+
+ul.list-group {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+li.list-group-item {
+    width: calc(100% / 2 - 5px);
+    float: left;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: solid black 1px;
+}
+
+
