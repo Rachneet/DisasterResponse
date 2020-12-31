@@ -33,6 +33,14 @@ front-end.
 4. <b>app/run.py</b>: Runs the flask application and contains
 code for rendering templates and visualizations.
  
+ 
+ ## Run Locally
+ 
+ 1. `python data/process_data.py "messages.csv" "categories.csv" "DisasterResponse.db" `
+ 2. `python models/train_classifier.py "../data/DisasterResponse.db" "classifier.pkl"`
+ 3. `python run.py` 
+ 
+ The app will be running on port 5000.
  ## App Screenshot
  
  ![alt text](data/ds_resp_screenshot.PNG) 
