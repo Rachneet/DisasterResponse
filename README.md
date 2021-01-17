@@ -36,9 +36,11 @@ code for rendering templates and visualizations.
  
  ## Run Locally
  
- 1. `python data/process_data.py "messages.csv" "categories.csv" "DisasterResponse.db" `
- 2. `python models/train_classifier.py "../data/DisasterResponse.db" "classifier.pkl"`
- 3. `python run.py` 
+ 1. `cd data`
+ 2. `python process_data.py "messages.csv" "categories.csv" "DisasterResponse.db" `
+ 3. `cd ..`
+ 4. `python models/train_classifier.py "data/DisasterResponse.db" "models/classifier.pkl"`
+ 5. `python app/run.py` 
  
  The app will be running on port 5000.
  ## App Screenshot

@@ -32,11 +32,11 @@ app.static_folder = 'static'
 #     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///../data/DisasterResponse.db')
+engine = create_engine('sqlite:///data/DisasterResponse.db')
 df = pd.read_sql_table('DisasterResponseTable', engine)
 
 # load model
-model = joblib.load("../models/classifier.pkl")
+model = joblib.load("models/classifier.pkl")
 
 
 def get_top_n_words(corpus, n=None):
